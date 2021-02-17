@@ -1,0 +1,314 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/********************** BASE STYLING ***********************/
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 1000px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    font-size: calc(1.4rem + 0.4vw);
+    font-family: 'Xanh Mono', monospace;
+    color: #2d2529;
+    margin: 0 auto;
+    position: relative;   
+    background-image: url("assets/natural-paper.png");
+    background-color: #f0f0f0;
+    line-height: 1.3;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* header '&' styles */
+h1 span.and {
+    color: #c10606;
+    font-size: 130px;
+    position: absolute;
+    top: -33px;
+    left: 217px;
+    z-index: -10;
+    font-weight: bold;
+}
+
+h1 span.space {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 8rem;
+    text-align: center;
+    position: relative;
+    width: 750px;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: calc(2.6rem + 1vw);
+    letter-spacing: 1px;
+    margin: 1vw auto;
+    margin-top: 0px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    width: 85%;
+}
+
+h3 {
+    font-size: calc(1.5rem + 0.8vw)
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+a {
+    color: #c10606;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover, a:focus {
+    color: black;
+}
+
+/********************** NEWS SECTION STYLING ***********************/
+
+.news-item {
+    width: 80%;
+    border: solid black 4px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.news-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-body {
+    display: flex;
+}
+
+.news-text {
+    max-width: 60%;
+}
+
+.news-body img {
+    max-width: calc(40% - 30px);
+    max-height: 200px;
+    margin: 15px;
+}
+
+/* carrosel arrows */
+.arrows {
+    position: initial;
+}
+
+i.fas {
+    position: absolute;
+    top: calc(50% - 3.5rem);
+    font-size: 5rem;
+    z-index: 10;
+}
+
+.fa-chevron-circle-left {
+    left: -80px;
+}
+
+.fa-chevron-circle-right {
+    right: -80px;
+}
+
+i.fas:hover, i.fas:focus {
+    color: #c10606;
+}
+
+/********************** SECTION STYLING ***********************/
+
+.news-container, .trump-container {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 40px auto;
+    margin-top: 30px;
+    outline: black solid 5px;
+    box-shadow: #c10606 15px 15px 0px;
+}
+
+/********************** TRUMP SECTION STYLING ***********************/
+
+.trump-item {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.trump-item img {
+    width: 100%;
+    display: initial;
+}
+
+.trump-item h3 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 43%;
+    width: 53%;
+    color: white;
+    height: 100%;
+}
+
+/********************** FOOTER STYLING ***********************/
+
+footer {
+    background-color: lightgray;
+    margin-top: calc(40px + 5vw);
+    text-align: center;
+    padding: 25px;
+    border-top: 5px solid black;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/********************** MEDIA QUERIES ***********************/
+
+@media only screen and (max-width: 800px) {
+
+/* resizing/repositioning header elements */
+    h1 {
+        display: flex;
+        flex-direction: column;
+        line-height: 65px;
+        margin: 35px 0px;
+        width: 460px;
+    }
+
+    h1 span.space, h1 span.dash {
+        display: none;
+    }
+
+    h1 span.and {
+        font-size: 110px;
+        top: -4px;
+        left: 295px;
+    }
+
+    h2 {
+        width: 95%;
+    }
+
+/* repositioning news section */
+    h1 span.news {
+        position: relative;
+        left: -18px;
+    }
+
+    .news-body {
+        flex-direction: column-reverse;
+    }
+
+    .news-text, .news-body img {
+        max-width: 100%;
+        max-height: 300px;
+        margin-left: 0;
+    }
+
+    .news-item {
+        width: 100%;
+    }
+
+    .news-container {
+        padding: 30px;
+    }
+
+    .trump-item h3 {
+        font-size: calc(1rem + 1vw);
+    }
+
+/* respositioning arrows */
+    .arrows { /* position of arrows are relative to this container */
+        width: 100%;
+        position: relative;
+        height: 65px;
+    }
+
+    i.fas {
+        position: absolute;
+        top: auto;
+        margin-top: 15px;
+    }
+
+    .fa-chevron-circle-left {
+        left: 10px;
+    }
+
+    .fa-chevron-circle-right {
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+/* resizing header elements */
+    h1 {
+        width: 320px;
+        line-height: 65px;
+        line-height: 48px;
+        font-size: 5.6rem;
+    }
+
+    h1 span.and {
+        font-size: 80px;
+        left: 205px;
+    }
+
+/* removing trump image */
+    .trump-item h3 {
+        position: initial;
+        color: black;
+        width: 100%;
+        font-size: calc(1.5rem + 0.5vw);
+        border: black solid 4px;
+        padding: 10px;
+        background-color:#f0f0f0;
+    }
+
+    .trump-item img {
+        display: none;
+    }
+
+/* resizing section containers/wrapper */
+    .news-container, .trump-container {
+        box-shadow: #c10606 11px 10px 0px;
+        padding: calc(10px + 1.5vw);
+    }
+
+    .wrapper {
+        max-width: 86%;
+    }
+}
